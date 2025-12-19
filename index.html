@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio de Desenvolvedor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="logo">Dev<span class="highlight">Portfolio</span>.</div>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="greeting">Olá, meu nome é</p>
+        <h1>Seu Nome</h1>
+        <h2 class="role">
+          Desenvolvedor <span class="typing-effect">Full Stack</span>
+        </h2>
+        <p class="subtitle">
+          Transformo ideias complexas em experiências digitais elegantes e
+          performáticas. Especialista em construir o futuro da web.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn primary">Ver Projetos</a>
+          <a href="#contact" class="btn secondary">Entrar em contato</a>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section hidden">
+      <div class="container">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              Sou um desenvolvedor de software apaixonado por tecnologia e
+              inovação. Com mais de <strong>3 anos de experiência</strong>,
+              tenho trabalhado em projetos que variam de landing pages a
+              sistemas complexos de gestão.
+            </p>
+            <p>
+              Meu foco atual é aprofundar conhecimentos em arquitetura de
+              software e UX Design, garantindo que cada linha de código
+              contribua para uma experiência de usuário excepcional.
+            </p>
+          </div>
+          <div class="skills-container">
+            <h3>Tech Stack</h3>
+            <div class="skills">
+              <div class="skill-card"><i class="fab fa-js"></i> JavaScript</div>
+              <div class="skill-card"><i class="fab fa-react"></i> React</div>
+              <div class="skill-card"><i class="fab fa-node"></i> Node.js</div>
+              <div class="skill-card"><i class="fab fa-python"></i> Python</div>
+              <div class="skill-card"><i class="fas fa-database"></i> SQL</div>
+              <div class="skill-card"><i class="fab fa-docker"></i> Docker</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section bg-alt hidden">
+      <div class="container">
+        <h2 class="section-title">Experiência Profissional</h2>
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023 - Presente</div>
+            <div class="timeline-content">
+              <h3>Desenvolvedor Senior</h3>
+              <h4>Tech Solutions Inc.</h4>
+              <p>
+                Liderança técnica de equipe frontend, implementação de CI/CD e
+                migração de legado para React.
+              </p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021 - 2023</div>
+            <div class="timeline-content">
+              <h3>Desenvolvedor Full Stack</h3>
+              <h4>Creative Agency</h4>
+              <p>
+                Desenvolvimento de e-commerces e APIs RESTful utilizando Node.js
+                e PostgreSQL.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section hidden">
+      <div class="container">
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <div class="projects-grid">
+          <!-- Projeto 1 -->
+          <div class="project-card">
+            <div class="card-header">
+              <i class="fas fa-folder-open folder-icon"></i>
+              <div class="card-links">
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>E-commerce Dashboard</h3>
+              <p>
+                Um painel administrativo completo com gráficos em tempo real,
+                gestão de estoque e relatórios financeiros.
+              </p>
+              <ul class="card-tech">
+                <li>React</li>
+                <li>Chart.js</li>
+                <li>Firebase</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Projeto 2 -->
+          <div class="project-card">
+            <div class="card-header">
+              <i class="fas fa-folder-open folder-icon"></i>
+              <div class="card-links">
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Task Manager API</h3>
+              <p>
+                API robusta para gerenciamento de tarefas com autenticação JWT,
+                rate limiting e documentação Swagger.
+              </p>
+              <ul class="card-tech">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Projeto 3 -->
+          <div class="project-card">
+            <div class="card-header">
+              <i class="fas fa-folder-open folder-icon"></i>
+              <div class="card-links">
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" title="Live Demo"
+                  ><i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>AI Chat Interface</h3>
+              <p>
+                Interface de chat moderna integrando a API da OpenAI com suporte
+                a markdown e histórico de conversas.
+              </p>
+              <ul class="card-tech">
+                <li>Next.js</li>
+                <li>Tailwind</li>
+                <li>OpenAI API</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-alt hidden">
+      <div class="container">
+        <h2 class="section-title">Vamos Conversar?</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <p>
+              Estou sempre aberto a novas oportunidades e parcerias. Sinta-se à
+              vontade para entrar em contato!
+            </p>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>email@exemplo.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fab fa-linkedin"></i>
+              <span>linkedin.com/in/seunome</span>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Seu Nome" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Seu Email" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn primary">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 Desenvolvido por <span class="highlight">Seu Nome</span>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
